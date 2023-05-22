@@ -1,0 +1,32 @@
+#titulo{
+    display: block;
+    text-align: center;
+}
+#faixa ul{
+    display: flex;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4,5mm;
+
+}
+#faixa ul li{
+    list-style-type:circle;
+    padding-right: 20px;
+}
+.lista1{
+    text-decoration: none;
+}
+.img{
+    display: block;
+    text-align: center;
+}
+img{
+    padding: 5mm;
+    height: 20mm; 
+    justify-content: center;
+}
+#texto{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4,5mm;
+}

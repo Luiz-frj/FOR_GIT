@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/apae-logo.svg">
+    <link rel="stylesheet" href="css/forms.css">
+    <title> Ajude a APAE </title>
+</head>
+<body>
+    <form method="post" action="mailto:luizfrj200412@gmail.com" enctype="text/plain">
+    <fieldset>
+        <legend>Formulario de ajuda</legend>
+        <div>
+            <label> Nome: </label>
+                <input type="text" maxlength="30" placeholder="Digite seu nome"><br><br>
+            <label> Email: </label>
+                <input type="text" required="required" name="email" placeholder="Digite seu Email"><br><br>
+            <label> Telefone de contato: </label>
+                <input type="number" required="required" placeholder="(xx)xxxxx-xxxx"><br><br>
+            
+            <label for="doar"> O que ira doar: </label><br>
+                <input type="checkbox" id="roupas" name="doar" value="roupas">
+                <label for="roupas"> Roupas </label><br>
+                <input type="checkbox" id="limpeza" name="doar" value="Materiais de limpeza">
+                <label for="limpeza"> Material de limpeza </label><br>
+                <input type="checkbox" id="higiene" name="doar" value="higiene">
+                <label for="higiene"> Higiene Pessoal </label><br>
+                <input type="checkbox" id="descartaveis" name="doar" value="descartaveis">
+                <label for="descartaveis"> Descartaveis </label><br>
+                <input type="checkbox" id="Dinheiro" name="doar" value="Dinheiro">
+                <label for="Dinheiro"> Dinheiro </label><br>
+                <input type="checkbox" id="voluntario" name="doar" value="voluntario">
+                <label for="voluntario"> Ajuda voluntaria </label><br><br>
+
+            <label> *Caso a opção 'dinheiro' tenha sido marcada, informe a quantia* </label><br>
+            <label for="valor">Qantida de dinheiro:</label>
+            <input type="text" list="valores" placeholder="Qualquer valor ajuda">
+                <datalist id="valores">
+                    <option>R$5,00</option>
+                    <option>R$10,00</option>
+                    <option>R$20,00</option>
+                    <option>R$50,00</option>
+                </datalist><br><br>
+
+        <input type="submit" onclick="alert( 'Muito obrigado por ajudar a APAE Brasil :D ') " value="ENVIAR">
+        <input type="reset" value="RESETAR">
+     </fieldset><br>
+    </form>
+    <div>
+        <img src="img/apae-logo.svg">
+    </div>
+</body>
+</html>
